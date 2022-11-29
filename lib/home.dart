@@ -16,6 +16,10 @@ class Home extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            const Text('Day two'),
+            const SizedBox(
+              height: 20,
+            ),
             OutlinedButton(
               onPressed: () {
                 context.push('/day_two/lession_one');
@@ -27,6 +31,19 @@ class Home extends StatelessWidget {
                 context.push('/day_two/lession_two');
               },
               child: const Text('Lession two'),
+            ),
+            const SizedBox(
+              height: 40,
+            ),
+            const Text('Day three'),
+            const SizedBox(
+              height: 20,
+            ),
+            OutlinedButton(
+              onPressed: () {
+                context.push('/day_three/login');
+              },
+              child: const Text('Login'),
             ),
           ],
         ),
